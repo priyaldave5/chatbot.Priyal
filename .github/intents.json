@@ -1,1 +1,42 @@
-
+ [
+   {
+     "tag":"Identity",
+     "patterns":["Who are you","What's intresting about you"],
+     "responses": ["I am a chatbot", "I will interact and guide you", "I can answer to your every question"]
+   },
+   {
+     "tag": "Comparision",
+      "patterns": ["Which one is better", "either first option is good or second", "Which of the following is better to purchase"],
+      "responses": ["Both are best", "You can choose anyone accourding to your choice .", "Both gives great performance"]
+    },
+   {
+      "tag": "Hospital",
+        "patterns": ["Is there any hospital in my area", "Treatment Centres ", "Doctors around", "Health cure near me","Medical Stores "],
+        "responses": ["Your can use google map to get imformation", "You can call 108 or 102 for help"]
+   },
+   {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "How are you", "What's up"],
+        "responses": ["Hi there", "Hello", "Hey", "I'm fine, thank you", "Nothing much"]
+    },
+    {
+        "tag": "bye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Take care"],
+        "responses": ["Goodbye", "See you later", "Take care"]
+    },
+    {
+        "tag": "thanks",
+        "patterns": ["Thank you", "Thanks", "Thanks a lot", "I appreciate it","It means a lot],
+        "responses": ["You're welcome", "No problem", "Glad I could help"]
+    },
+    {
+        "tag": "About chatbot",
+        "patterns": ["What can you do", "Who are you", "What are you", "What is your purpose"],
+        "responses": ["I am a chatbot", "My purpose is to assist you", "I can answer questions and provide assistance"]
+    },
+    {
+        "tag": "help",
+        "patterns": ["Help", "I need help", "Can you help me", "What should I do"],
+        "responses": ["Sure, what do you need help with?", "I'm here to help. What's the problem?", "How can I assist you?"]
+    },
+ ]

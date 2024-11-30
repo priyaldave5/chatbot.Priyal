@@ -5,11 +5,17 @@ import streamlit as st
 import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
+
+
 # Show title and description.
 st.title("💬Chatbot")
 st.write(
-    "This is a simple chatbot created by Priyal."
+    "   WELCOME! This is a simple chatbot created by Priyal."
 )
+
+ssl._create_default_https_context = ssl._create_unverified_context
+nltk.data.path.append(os.path.abspath("nltk_data"))
+nltk.download('punkt')
 
 # Ask user for their OpenAI API key via `st.text_input`.
 # Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it

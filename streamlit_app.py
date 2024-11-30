@@ -1,6 +1,10 @@
+import os
+import nltk
+import ssl
 import streamlit as st
-from openai import OpenAI
-
+import random
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
 # Show title and description.
 st.title("💬 Chatbot")
 st.write(

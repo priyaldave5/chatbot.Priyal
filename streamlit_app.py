@@ -6,7 +6,7 @@ import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 # Show title and description.
-st.title("💬Chatbo")
+st.title("💬Chatbot")
 st.write(
     "This is a simple chatbot created by Priyal."
 )

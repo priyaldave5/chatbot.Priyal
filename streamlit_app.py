@@ -1,4 +1,7 @@
 import os
+import json
+import datetime
+import csv
 import nltk
 import ssl
 import streamlit as st
@@ -6,21 +9,17 @@ import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
-
-# Show title and description.
-st.title("💬Chatbot")
-st.write(
-    "   WELCOME! This is a simple chatbot created by Priyal."
-)
-
 ssl._create_default_https_context = ssl._create_unverified_context
 nltk.data.path.append(os.path.abspath("nltk_data"))
 nltk.download('punkt')
 
+# Load intents from the JSON file
 file_path = os.path.abspath("./intents.json")
 with open(file_path, "r") as file:
     intents = json.load(file)
-    vectorizer = TfidfVectorizer(ngram_range=(1, 4))
+
+# Create the vectorizer and classifier
+vectorizer = TfidfVectorizer(ngram_range=(1, 4))
 clf = LogisticRegression(random_state=0, max_iter=10000)
 
 # Preprocess the data
